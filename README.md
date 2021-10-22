@@ -2,8 +2,6 @@
 
 ## **Content:**
 
-[scroll-animation](#scroll-animation)
-
-- [scroll-animation](scroll-animation)
+### [scroll-animation](scroll-animation)
 
 [Back &#8679;](#Content)
