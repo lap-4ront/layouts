@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.4;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.project {
+  box-shadow: 1px 1px 5px 0px rgb(34 36 98 / 50%);
+  border-radius: 2px;
+  padding: 0 0 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.scroll-animation h3 {
+  margin: 10px 0;
+}
+
+.scroll-animation p {
+  padding: 0 10px 10px;
+  text-align: left;
+}
