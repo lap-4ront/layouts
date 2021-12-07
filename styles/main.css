@@ -9,27 +9,47 @@ html {
 }
 
 body {
+  background-color: #ddf;
+  height: 100vh;
   line-height: 1.4;
   margin: 0;
 }
 
 img {
+  height: 155px;
   max-width: 100%;
+  width: 100%;
+}
+
+a {
+  margin-top: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }
 
 .project {
+  align-items: center;
+  background-color: #fff;
   box-shadow: 1px 1px 5px 0px rgb(34 36 98 / 50%);
-  border-radius: 2px;
+  border-radius: 5px 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  overflow: hidden;
   padding: 0 0 10px;
   text-align: center;
   width: 300px;
 }
 
-.scroll-animation h3 {
+h3 {
   margin: 10px 0;
 }
 
-.scroll-animation p {
+p {
   padding: 0 10px 10px;
   text-align: left;
 }
