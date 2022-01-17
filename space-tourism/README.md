@@ -51,5 +51,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [4rontender](https://www.4ront.ru)
+- Website - [4ront.ru](https://www.4ront.ru)
 - Twitter - [@4rontender](https://www.twitter.com/4rontender)
