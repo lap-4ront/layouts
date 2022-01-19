@@ -1,6 +1,6 @@
-/**********/
+/**************/
 /* Custom properties */
-/**********/
+/**************/
 
 :root {
   --clr-dark: hsl(230, 35%, 7%);
@@ -24,10 +24,10 @@
 
 }
 
-/**********/
+/**************/
 /* Resset */
 /* https://piccalil.li/blog/a-modern-css-reset */
-/**********/
+/**************/
 
 html {
   box-sizing: border-box;
@@ -115,9 +115,9 @@ select {
 }
 
 
-/**********/
+/**************/
 /* Utility classes */
-/**********/
+/**************/
 
 .flex {
   display: flex;
@@ -131,7 +131,6 @@ select {
 
 .flow>*:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
-  outline: 1px solid red;
 }
 
 .container {
@@ -244,4 +243,30 @@ select {
 .fs-700,
 .fs-600 {
   line-height: 1.1;
+}
+
+.numbered-title {
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
+}
+
+.numbered-title span {
+  margin-right: .5em;
+  font-weight: 700;
+  color: hsl(var(--clr-white) / .25);
+}
+
+/**************/
+/* Components */
+/**************/
+
+.large-button {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  padding: 0 2em;
+  place-items: center;
+  text-decoration: none;
 }
