@@ -3,9 +3,9 @@
 /**************/
 
 :root {
-  --clr-dark: hsl(230, 35%, 7%);
-  --clr-accent: hsl(231, 77%, 90%);
-  --clr-white: hsl(0, 0%, 100%);
+  --clr-dark: 230, 35%, 7%;
+  --clr-accent: 231, 77%, 90%;
+  --clr-white: 0, 0%, 100%;
 
   /* font-sizes */
   --fs-900: 9.375rem;
@@ -72,8 +72,8 @@ html:focus-within {
 }
 
 body {
-  background-color: var(--clr-dark);
-  color: var(--clr-white);
+  background-color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-white));
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-300);
   line-height: 1.5;
@@ -153,27 +153,27 @@ select {
 
 /* colors */
 .bg-dark {
-  background-color: var(--clr-dark);
+  background-color: hsl(var(--clr-dark));
 }
 
 .bg-accent {
-  background-color: var(--clr-accent);
+  background-color: hsl(var(--clr-accent));
 }
 
 .bg-white {
-  background-color: var(--clr-white);
+  background-color: hsl(var(--clr-white));
 }
 
 .text-dark {
-  color: var(--clr-dark);
+  color: hsl(var(--clr-dark));
 }
 
 .text-accent {
-  color: var(--clr-accent);
+  color: hsl(var(--clr-accent));
 }
 
 .text-white {
-  color: var(--clr-white);
+  color: hsl(var(--clr-white));
 }
 
 /* Typography */
@@ -268,5 +268,26 @@ select {
   display: grid;
   padding: 0 2em;
   place-items: center;
+  position: relative;
   text-decoration: none;
+  z-index: 1;
+}
+
+
+.large-button::after {
+  background: hsl(var(--clr-white), .15);
+  border-radius: inherit;
+  content: '';
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s linear, transform 0.5s ease-in-out;
+  width: 100%;
+  z-index: -1;
+}
+
+.large-button:hover::after,
+.large-button:focus::after {
+  opacity: 1;
+  transform: scale(1.5);
 }
