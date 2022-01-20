@@ -281,7 +281,7 @@ select {
   height: 100%;
   opacity: 0;
   position: absolute;
-  transition: opacity 0.5s linear, transform 0.5s ease-in-out;
+  transition: opacity 0.5s linear, transform 0.75s ease-in-out;
   width: 100%;
   z-index: -1;
 }
@@ -290,4 +290,43 @@ select {
 .large-button:focus::after {
   opacity: 1;
   transform: scale(1.5);
+}
+
+.primary-navigation {
+  --gap: 8rem;
+  --underline-gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a>span {
+  font-weight: 700;
+  margin-right: .5em;
+}
+
+.underline-indicators>* {
+  border: 0;
+  border-bottom: 0.2rem solid hsl(var(--clr-white), 0);
+  cursor: pointer;
+  padding: var(--underline-gap, 1rem) 0;
+}
+
+.underline-indicators>*:hover,
+.underline-indicators>*:focus {
+  border-color: hsl(var(--clr-white), .5);
+}
+
+.underline-indicators>.active,
+.underline-indicators>[aria-selected="true"] {
+  border-color: hsl(var(--clr-white), 1);
+  color: hsl(var(--clr-white), 1);
+}
+
+.tab-list {
+  --gap: 2rem;
 }
