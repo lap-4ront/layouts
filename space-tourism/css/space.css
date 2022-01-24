@@ -155,10 +155,18 @@ select {
 .grid-container {
   border: 5px solid limegreen;
   display: grid;
+  padding-inline: 1rem;
+  place-items: center;
+  text-align: center;
+}
+
+.grid-container * {
+  max-width: 50ch;
 }
 
 @media (min-width: 45em) {
   .grid-container {
+    text-align: center;
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
   }
@@ -172,10 +180,12 @@ select {
     grid-column: 3;
     outline: 1px solid yellow;
   }
+
+  .grid-container--home {
+    align-items: end;
+    padding-bottom: max(6rem, 20vh);
+  }
 }
-
-
-
 
 .sr-only {
   position: absolute;
@@ -304,14 +314,15 @@ select {
 /* ------------------- */
 
 .large-button {
-  position: relative;
-  z-index: 1;
-  display: inline-grid;
-  place-items: center;
-  padding: 0 2em;
-  border-radius: 50%;
   aspect-ratio: 1;
+  border-radius: 50%;
+  display: inline-grid;
+  font-size: 2rem;
+  padding: 0 2em;
+  place-items: center;
+  position: relative;
   text-decoration: none;
+  z-index: 1;
 }
 
 .large-button::after {
