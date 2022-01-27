@@ -373,6 +373,7 @@ select {
     margin: 0;
     flex-direction: column;
     transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
   }
 
   .primary-navigation[data-visible="true"] {
@@ -391,6 +392,15 @@ select {
     width: 1.5rem;
     aspect-ratio: 1;
     border: 0;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url('./../assets/shared/icon-close.svg');
+  }
+
+  .mobile-nav-toggle:focus-visible {
+    outline: 1px solid white;
+    outline-offset: 5px;
   }
 }
 
