@@ -342,6 +342,17 @@ select {
   transform: scale(1.5);
 }
 
+/* primary header */
+
+.logo {
+  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .primary-navigation {
   --underline-gap: 2rem;
   list-style: none;
@@ -349,6 +360,15 @@ select {
   margin: 0;
   background: hsl(var(--clr-white) / 0.95);
   backdrop-filter: blur(1.5rem);
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a>span {
+  font-weight: 700;
+  margin-right: .5em;
 }
 
 @supports (backdrop-filter: blur(1rem)) {
@@ -402,15 +422,6 @@ select {
     outline: 1px solid white;
     outline-offset: 5px;
   }
-}
-
-.primary-navigation a {
-  text-decoration: none;
-}
-
-.primary-navigation a>span {
-  font-weight: 700;
-  margin-right: .5em;
 }
 
 .underline-indicators>* {
