@@ -30,3 +30,19 @@ const changeTabFocus = (event) => {
 };
 
 tabList.addEventListener("keydown", changeTabFocus);
+
+const changeTabPanel = (event) => {
+  const targetTab = event.target;
+  const targetPanel = targetTab.getAttribute("aria-controls");
+
+  const tabContainer = targetTab.parentNode;
+  const mainContainer = tabContainer.parentNode;
+
+  mainContainer
+    .querySelectorAll('[role="tabpanel"]')
+    .forEach((panel) => panel.setAttribute("hidden", true));
+
+  mainContainer.querySelector([`#${targetPanel}`]).removeAttribute("hidden");
+};
+
+tabs.forEach((tab) => tab.addEventListener("click", changeTabPanel));
