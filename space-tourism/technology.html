@@ -16,7 +16,7 @@
   <title>Space tourism website</title>
 </head>
 
-<body class="destination">
+<body class="technology">
 
   <a href="#main" class="skip-to-content">Skip to content</a>
 
@@ -55,10 +55,16 @@
       <span aria-hidden="true">03</span> SPACE LAUNCH 101
     </h1>
 
-    <div class="number-indicators flex" style="flex-direction: column;">
-      <button aria-selected="true">1</button>
-      <button aria-selected="false">2</button>
-      <button aria-selected="false">3</button>
+    <div class="number-indicators flex" role="tablist" aria-label="technology list">
+      <button aria-selected="true" aria-controls="vehicle-tab" data-image="vehicle-image" role="tab" tabindex="0">
+        1
+      </button>
+      <button aria-selected="false" aria-controls="spaceport-tab" data-image="spaceport-image" role="tab" tabindex="-1">
+        2
+      </button>
+      <button aria-selected="false" aria-controls="capsule-tab" data-image="capsule-image" role="tab" tabindex="-1">
+        3
+      </button>
     </div>
 
     <!-- A launch vehicle -->
@@ -104,18 +110,20 @@
     </article>
 
     <picture id="vehicle-image">
-      <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch vehicle">
+      <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="Launch vehicle">
     </picture>
 
     <picture hidden id="spaceport-image">
-      <img src="./assets/technology/image-spaceport-portrait.jpg" alt="Spaceport">
+      <img src="./assets/technology/image-spaceport-landscape.jpg" alt="Spaceport">
     </picture>
 
     <picture hidden id="capsule-image">
-      <img src="./assets/technology/image-space-capsule-portrait.jpg" alt="Space capsule">
+      <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="Space capsule">
     </picture>
 
   </main>
+
+  <script src="./js/tabs.js"></script>
 </body>
 
 </html>
