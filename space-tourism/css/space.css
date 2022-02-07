@@ -585,6 +585,7 @@ body {
 }
 
 .grid-container--destination>picture {
+  align-self: start;
   grid-area: image;
   max-width: 60%;
 }
@@ -688,8 +689,7 @@ body {
       '. image content .';
   }
 
-  .grid-container--destination>picture,
-  .grid-container--crew>picture {
+  .grid-container--destination>picture {
     max-width: 90%;
   }
 
@@ -699,18 +699,18 @@ body {
   }
 
   .grid-container--crew {
+    grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
+    justify-items: start;
     grid-template-areas:
       '. title title .'
       '. content image .'
       '. tabs image .';
   }
 
-  .grid-container--crew>.dot-indicators {
-    justify-self: start;
-  }
-
-  /* .grid-container--crew>picture {
+  .grid-container--crew>picture {
     align-self: end;
-  } */
+    grid-column: span 2;
+    max-width: 90%;
+  }
 
 }
