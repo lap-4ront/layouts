@@ -25,7 +25,8 @@ body {
   opacity: 0.8;
 }
 
-#home-section .fas {
+#home-section .fas,
+#pricing-section .fas {
   background: #fff;
   border-radius: 5px;
   color: #008ed6;
