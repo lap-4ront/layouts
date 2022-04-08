@@ -7,5 +7,6 @@
 * ### [circular-menu](circular-menu)
 * ### [space-tourism](space-tourism)
 * ### [social-lab](social-lab)
+* ### [book-showcase](book-showcase)
 
 [Back &#8679;](#content)
