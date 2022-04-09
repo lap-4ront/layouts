@@ -4,11 +4,16 @@
   "description": "Book Showcase Landing Page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
-  "keywords": ["landing page", "bootstrap5", "sass", "gulp4"],
+  "keywords": [
+    "landing page",
+    "bootstrap5",
+    "sass",
+    "gulp4"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
