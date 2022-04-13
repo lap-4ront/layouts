@@ -7,7 +7,8 @@ const server = browserSync.create();
 const PATHS = {
   bootstrapSass: "./src/styles/sass/bootstrap.scss",
   mainSass: "./src/styles/sass/main.scss",
-  html: "./src/index.html"
+  html: "./src/index.html",
+  js: "./src/scripts/app.js"
 };
 
 const BOOTSTRAP = () =>
@@ -33,6 +34,13 @@ const HTML = () =>
 
 exports.HTML = HTML;
 
+const JS = () =>
+  src(PATHS.js, { since: lastRun(HTML) })
+    .pipe(dest("./dist/scripts"))
+    .pipe(server.stream());
+
+exports.JS = JS;
+
 const serve = () => {
   server.init({
     server: {
@@ -47,4 +55,4 @@ const serve = () => {
   );
 };
 
-exports.default = series(HTML, BOOTSTRAP, SASS, serve);
+exports.default = series(JS, HTML, BOOTSTRAP, SASS, serve);
