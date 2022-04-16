@@ -1,0 +1,26 @@
+.navbar .nav-item.active {
+  border-left: 3px solid #444;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 14px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-transform: uppercase;
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  background: url('../assets/image1.jpg') center / cover no-repeat;
+}
+
+.carousel-image-2 {
+  background: url('../assets/image2.jpg') center / cover no-repeat;
+}
+
+.carousel-image-3 {
+  background: url('../assets/image3.jpg') center / cover no-repeat;
+}
