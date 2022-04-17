@@ -24,3 +24,21 @@
 .carousel-image-3 {
   background: url('../assets/image3.jpg') center / cover no-repeat;
 }
+
+#home-heading {
+  background: url('../assets/lights.jpg') center / cover no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 200px;
+  position: relative;
+  text-align: center;
+}
+
+.dark-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
