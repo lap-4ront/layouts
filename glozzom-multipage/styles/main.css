@@ -42,3 +42,18 @@
   top: 0;
   width: 100%;
 }
+
+#video-play {
+  background: url('../assets/media.jpg');
+  background-position: 0 -300px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 200px;
+  position: relative;
+  text-align: center;
+}
+
+#video-play a {
+  color: #fff
+}

@@ -152,6 +152,37 @@
     </div>
   </section>
 
+  <!-- Video Player -->
+  <section id="video-play">
+    <div class="dark-overlay">
+      <div class="row m-0">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video" data-video="https://www.youtube.com/embed/7GjJef2QkQU" data-bs-toggle="modal"
+              data-bs-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>See What We Do</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div class="modal fade" id="videoModal" data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="" frameborder="0" height="350" width="100%" allow="autoplay;" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
   </script>
   <script type="module" src="/scripts/app.js"></script>
