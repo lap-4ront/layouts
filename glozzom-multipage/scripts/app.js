@@ -1,6 +1,10 @@
 import "bs5-lightbox";
 import "./../styles/main.css";
 
+// Generate the actual date
+const YEAR = document.querySelector("#year");
+YEAR.innerHTML = new Date().getFullYear();
+
 const myCarousel = document.querySelector("#myCarousel");
 const carousel = new bootstrap.Carousel(myCarousel, {
   interval: 7000
