@@ -8,13 +8,18 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "keywords": ["vite", "bootstrap", "learn"],
+  "keywords": [
+    "vite",
+    "bootstrap",
+    "learn"
+  ],
   "author": "4rontender <4rontender@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "vite": "^2.9.5"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3"
+    "bootstrap": "^5.1.3",
+    "bs5-lightbox": "^1.8.0"
   }
 }
