@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "bs5-lightbox": "^1.8.0"
+    "bs5-lightbox": "^1.8.0",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   }
 }
