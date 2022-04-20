@@ -1,3 +1,4 @@
+import "@fontsource/dosis";
 import "bs5-lightbox";
 import "./../styles/main.css";
 

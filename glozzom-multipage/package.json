@@ -19,6 +19,7 @@
     "vite": "^2.9.5"
   },
   "dependencies": {
+    "@fontsource/dosis": "^4.5.7",
     "bootstrap": "^5.1.3",
     "bs5-lightbox": "^1.8.0",
     "jquery": "^3.6.0",
