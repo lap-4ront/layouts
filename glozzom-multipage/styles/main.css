@@ -78,10 +78,6 @@ body {
   margin-top: -50px;
 }
 
-#faq .accordion-button::after {
-  display: none;
-}
-
 #faq .accordion-item {
   border: 1px solid #444;
 }
