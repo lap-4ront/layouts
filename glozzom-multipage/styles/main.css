@@ -101,4 +101,8 @@ body {
   #faq .accordion {
     margin-bottom: 15px;
   }
+
+  #blog .post {
+    margin-bottom: 15px;
+  }
 }
