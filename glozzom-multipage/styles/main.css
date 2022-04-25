@@ -77,3 +77,32 @@ body {
 .about-img {
   margin-top: -50px;
 }
+
+#faq .accordion-button::after {
+  display: none;
+}
+
+#faq .accordion-item {
+  border: 1px solid #444;
+}
+
+#faq .accordion-collapse,
+#faq .accordion-header {
+  background-color: #333;
+}
+
+#faq .accordion-button {
+  background-color: inherit;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  #services .card {
+    margin-bottom: 15px;
+  }
+
+  #faq .accordion {
+    margin-bottom: 15px;
+  }
+}
