@@ -1,15 +1,15 @@
 import "@fontsource/dosis";
-import "bs5-lightbox";
+import "bootstrap/dist/js/bootstrap.esm";
+import Lightbox from "bs5-lightbox";
 import "./../styles/main.css";
+
+document
+  .querySelectorAll('[data-toggle="lightbox"]')
+  .forEach((el) => el.addEventListener("click", Lightbox.initialize));
 
 // Generate the actual date
 const YEAR = document.querySelector("#year");
 YEAR.innerHTML = new Date().getFullYear();
-
-const myCarousel = document.querySelector("#myCarousel");
-const carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 7000
-});
 
 // Playing video in the modal
 const autoPlayYouTubeModal = () => {
@@ -34,3 +34,8 @@ const autoPlayYouTubeModal = () => {
 };
 
 autoPlayYouTubeModal();
+
+const myCarousel = document.querySelector("#myCarousel");
+const carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 7000
+});

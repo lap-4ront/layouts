@@ -1,4 +1,7 @@
 import "@fontsource/dosis";
+import "bootstrap";
+import $ from "jquery";
+import "slick-carousel";
 import "./../styles/main.css";
 
 // Generate the actual date
