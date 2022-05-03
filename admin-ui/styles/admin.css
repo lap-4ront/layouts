@@ -1,0 +1,14 @@
+@media screen and (max-width: 576px) {
+  table {
+    font-size: 0.8rem;
+  }
+
+  tbody a.btn {
+    font-size: inherit;
+    padding: 5px;
+  }
+
+  .fas.fa-angle-double-right {
+    display: none;
+  }
+}
