@@ -173,6 +173,7 @@ label {
 
 .card__title {
   font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 25px;
 }
 
@@ -236,8 +237,127 @@ label {
 /* Footer styles */
 
 footer {
+  font-size: 1.25rem;
   padding: 20px 0;
   text-align: center;
 }
 
 /*** Base ***/
+
+
+/*** Media queries ***/
+
+@media screen and (max-width: 1440px) {
+  .story__image {
+    flex: 2;
+  }
+
+  .story__text {
+    font-size: 1rem;
+    flex: 1;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .story {
+    padding: 60px;
+  }
+
+  .story__content {
+    flex-direction: column;
+  }
+
+  .story__image {
+    margin-block-end: 25px;
+    margin-inline-end: 0;
+    height: auto;
+    width: auto;
+  }
+
+  .story__text {
+    font-size: 1.25rem;
+  }
+
+  .blog {
+    padding: 60px;
+  }
+
+  .blog__cards {
+    gap: 20px;
+  }
+
+  .card__title,
+  .card__description {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    padding: 30px;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    font-size: 1rem;
+  }
+
+  .menu__item:not(:last-of-type) {
+    margin-inline-end: 15px;
+  }
+
+  .blog__cards {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card:not(:last-of-type) {
+    margin-block-end: 25px;
+  }
+
+  .subscribe__email input {
+    padding: 10px 50px;
+  }
+}
+
+
+@media screen and (max-width: 425px) {
+  .navigation {
+    padding: 10px;
+  }
+
+  .brand {
+    font-size: 1rem;
+  }
+
+  .menu {
+    font-size: 0.8rem;
+  }
+
+  .menu__item:not(:last-of-type) {
+    margin-inline-end: 10px;
+  }
+
+  .home__banner {
+    min-height: 600px;
+  }
+
+  .home__title {
+    font-size: 3rem;
+  }
+
+  .story,
+  .blog {
+    padding: 20px;
+  }
+
+  .subscribe__email input {
+    padding: 10px 20px;
+  }
+}
