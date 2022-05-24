@@ -1,0 +1,15 @@
+{
+  "name": "work-anywhere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "tailwindcss -i \"./src/css/inp.css\" -o \"./src/css/out.css\" --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

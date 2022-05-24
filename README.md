@@ -12,5 +12,6 @@
 * ### [admin-ui](admin-ui)
 * ### [portfolio-grid](portfolio-grid)
 * ### [stepik-lp](stepik-lp)
+* ### [work-anywhere](work-anywhere)
 
 [Back &#8679;](#content)
