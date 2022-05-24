@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  --main-title: #cbd5e0;
+  background-color: #1a202c;
+  color: #fff;
+}
+
+main {
+  background: url("../assets/free-cut-out-people-autumn.png") center / cover
+    no-repeat;
+}
