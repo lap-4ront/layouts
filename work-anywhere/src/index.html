@@ -13,46 +13,72 @@
   <link rel="stylesheet" href="./css/out.css">
 </head>
 
-<body class="font-montserrat">
+<body class="page font-montserrat">
 
-  <header>
-    <nav class="navigation">
-      <div class="logotype">Mb</div>
-      <ul class="navigation-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#cart">Cart</a></li>
-        <li><span class="search"></span></li>
+  <header class="page__header">
+    <nav class="page__nav">
+      <div class="page__logotype">Mb</div>
+      <ul class="site-navigation">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link site-navigation__link--active" href="#home">Home</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#products">Products</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#about">About</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#location">Location</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#cart">Cart</a>
+        </li>
+        <li>
+          <span class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="48" width="48">
+              <path
+                d="M39.8 41.95 26.65 28.8Q25.15 30.1 23.15 30.825Q21.15 31.55 18.9 31.55Q13.5 31.55 9.75 27.8Q6 24.05 6 18.75Q6 13.45 9.75 9.7Q13.5 5.95 18.85 5.95Q24.15 5.95 27.875 9.7Q31.6 13.45 31.6 18.75Q31.6 20.9 30.9 22.9Q30.2 24.9 28.8 26.65L42 39.75ZM18.85 28.55Q22.9 28.55 25.75 25.675Q28.6 22.8 28.6 18.75Q28.6 14.7 25.75 11.825Q22.9 8.95 18.85 8.95Q14.75 8.95 11.875 11.825Q9 14.7 9 18.75Q9 22.8 11.875 25.675Q14.75 28.55 18.85 28.55Z" />
+            </svg>
+          </span>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <p>Back to school colection</p>
-      <p>Travel colection</p>
-      <p>Active colection</p>
-    </section>
+  <main class="page__content">
+    <section class="slider">
+      <div class="slider-controls">
+        <p class="slider-controls__item">Back to school colection</p>
+        <p class="slider-controls__item">Travel colection</p>
+        <p class="slider-controls__item">Active colection</p>
+      </div>
 
-    <section>
-      <h1>Work Anywhere</h1>
-      <p>
-        we are happy to introduce our new Active collection. Our new backs were designed for 00s
-        generations, specifically for the moddern professional
-      </p>
+      <div class="slider-description">
+        <h1 class="slider-description__title">Work Anywhere</h1>
+        <p class="slider-description__introduction">
+          we are happy to introduce our new Active collection. Our new backs were designed for 00s
+          generations, specifically for the moddern professional
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer>
-
-    <nav class="social-links">
-      <ul class="">
-        <li><a href="https://facebook.com">Fb</a></li>
-        <li><a href="https://instagram.com">In</a></li>
-        <li><a href="https://twitter.com">Tw</a></li>
-        <li><a href="https://vk.com">Vk</a></li>
+  <footer class="page__footer footer">
+    <nav class="footer__nav">
+      <ul class="footer__socials">
+        <li class="footer__socials__item">
+          <a class="footer__socials__link" href="https://facebook.com">Fb</a>
+        </li>
+        <li class="footer__socials__item">
+          <a class="footer__socials__link" href="https://instagram.com">In</a>
+        </li>
+        <li class="footer__socials__item">
+          <a class="footer__socials__link" href="https://twitter.com">Tw</a>
+        </li>
+        <li class="footer__socials__item">
+          <a class="footer__socials__link" href="https://vk.com">Vk</a>
+        </li>
       </ul>
     </nav>
 
@@ -60,14 +86,14 @@
 
       <article class="events">
         <h3 class="events__title">Events</h3>
-        <section class="events__act">
-          <p>
+        <section class="events-items">
+          <p class="events-items__event">
             <span>Back to school event</span>
             / <a href="https://t.me/mayllwer">@mayllwer</a>
             <time datetime="2022-06-19">SF - sat, June 19</time>
             / <time datetime="2022-06-19T23:00">11 pm - 2 am</time>
           </p>
-          <p>
+          <p class="events-items__event">
             <span>Pop - up 13th event</span>
             / <a href="https://t.me/mayllwer">@mayllwer</a>
             <time datetime="2022-07-03">SF - mon, July 3</time>
@@ -78,9 +104,10 @@
 
       <article class="news">
         <h3 class="news__title">News</h3>
-        <p>A fresh take on our Active collection / now also available in Red</p>
-        <p>Now we have a new place at 28 mall</p>
-        <button>Read more</button>
+        <p class="news__collection">A fresh take on our Active collection / now also available in
+          Red</p>
+        <p class="news__place">Now we have a new place at 28 mall</p>
+        <button class="news__read read-more">Read more</button>
       </article>
 
     </div>
