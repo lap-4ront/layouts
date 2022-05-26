@@ -2,13 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --main-title: rgba(203, 213, 224, 1);
+  --bg-body: rgba(41, 41, 41, 1);
+  --bg-footer: rgba(4, 4, 4, 0.5);
+  --primary-color: rgba(255, 255, 255, 1);
+  --accent-color: rgba(255, 0, 0, 1);
+}
+
 body {
-  --main-title: #cbd5e0;
-  background-color: #1a202c;
-  color: #fff;
+  background: url("../assets/free-cut-out-people-autumn.png") 40% -10% / 50% no-repeat;
+  background-color: var(--bg-body);
+  color: var(--primary-color, rgba(255, 255, 255, 1));
+}
+
+.site-navigation__link {
+  color: var(--primary-color);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 20px;
+}
+
+.site-navigation__link:hover {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.site-navigation__link--active {
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 20px;
 }
 
 main {
-  background: url("../assets/free-cut-out-people-autumn.png") center / cover
-    no-repeat;
+}
+
+footer {
+  background-color: var(--bg-footer);
 }
