@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="./css/out.css">
 </head>
 
-<body class="page h-screen font-montserrat">
+<body class="page h-screen font-montserrat flex flex-col">
 
-  <header class="page__header">
-    <nav class="page__nav flex py-10 px-10 relative">
+  <header class="page__header px-10 mb-20">
+    <nav class="page__nav flex py-10 relative">
       <div class="page__logotype self-end absolute left-0 bottom-0 font-bold text-4xl">Mb</div>
       <ul class="site-navigation flex items-center gap-x-12 ml-auto">
         <li class="site-navigation__item">
@@ -47,17 +47,18 @@
     </nav>
   </header>
 
-  <main class="page__content">
-    <section class="slider">
-      <div class="slider-controls">
-        <p class="slider-controls__item">Back to school colection</p>
-        <p class="slider-controls__item">Travel colection</p>
-        <p class="slider-controls__item">Active colection</p>
+  <main class="page__content px-10 flex-2">
+    <section class="slider flex justify-between items-center h-full">
+      <div class="slider-controls ml-12">
+        <p class="slider-controls__item mb-3.5">Back to school
+          <span class="block">collection</span></p>
+        <p class="slider-controls__item mb-3.5">Travel <span class="block">collection</span></p>
+        <p class="slider-controls__item">Active <span class="block">collection</span></p>
       </div>
 
-      <div class="slider-description">
-        <h1 class="slider-description__title">Work Anywhere</h1>
-        <p class="slider-description__introduction">
+      <div class="slider-description max-w-sm font-bold self-start">
+        <h1 class="slider-description__title text-6xl mb-8 leading-tight">Work Anywhere</h1>
+        <p class="slider-description__introduction text-xs leading-5">
           we are happy to introduce our new Active collection. Our new backs were designed for 00s
           generations, specifically for the moddern professional
         </p>
@@ -65,7 +66,7 @@
     </section>
   </main>
 
-  <footer class="page__footer footer">
+  <footer class="page__footer footer mt-auto">
     <nav class="footer__nav">
       <ul class="footer__socials">
         <li class="footer__socials__item">

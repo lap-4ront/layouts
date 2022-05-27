@@ -4,6 +4,9 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"]
+      },
+      flex: {
+        2: "2 1 0%"
       }
     }
   },
