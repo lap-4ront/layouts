@@ -7,6 +7,9 @@ module.exports = {
       },
       flex: {
         2: "2 1 0%"
+      },
+      rotate: {
+        "90op": "-90deg"
       }
     }
   },

@@ -14,6 +14,7 @@
 </head>
 
 <body class="page h-screen font-montserrat flex flex-col">
+  <!-- <div class="bg-image absolute top-0 left-0 w-full h-full z-0"></div> -->
 
   <header class="page__header px-10 mb-20">
     <nav class="page__nav flex py-10 relative">
@@ -35,13 +36,13 @@
         <li class="site-navigation__item">
           <a class="site-navigation__link transition-colors" href="#cart">Cart</a>
         </li>
-        <li>
-          <span class="search">
+        <li class="h-6">
+          <button class="search">
             <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#ffffff">
               <path
                 d="M19.6 21 13.3 14.7Q12.55 15.3 11.575 15.65Q10.6 16 9.5 16Q6.775 16 4.888 14.113Q3 12.225 3 9.5Q3 6.775 4.888 4.887Q6.775 3 9.5 3Q12.225 3 14.113 4.887Q16 6.775 16 9.5Q16 10.6 15.65 11.575Q15.3 12.55 14.7 13.3L21 19.6ZM9.5 14Q11.375 14 12.688 12.688Q14 11.375 14 9.5Q14 7.625 12.688 6.312Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5Q5 11.375 6.312 12.688Q7.625 14 9.5 14Z" />
             </svg>
-          </span>
+          </button>
         </li>
       </ul>
     </nav>
@@ -50,10 +51,14 @@
   <main class="page__content px-10 flex-2">
     <section class="slider flex justify-between items-center h-full">
       <div class="slider-controls ml-12">
-        <p class="slider-controls__item mb-3.5">Back to school
-          <span class="block">collection</span></p>
-        <p class="slider-controls__item mb-3.5">Travel <span class="block">collection</span></p>
-        <p class="slider-controls__item">Active <span class="block">collection</span></p>
+        <p class="slider-controls__item slider-controls__item--active text-white mb-3.5">
+          Back to school <span class="block">collection</span></p>
+        <p class="slider-controls__item text-white/[0.25] mb-3.5">
+          Travel <span class="block">collection</span>
+        </p>
+        <p class="slider-controls__item text-white/[0.25]">
+          Active <span class="block">collection</span>
+        </p>
       </div>
 
       <div class="slider-description max-w-sm font-bold self-start">
@@ -66,50 +71,63 @@
     </section>
   </main>
 
-  <footer class="page__footer footer mt-auto">
-    <nav class="footer__nav">
-      <ul class="footer__socials">
-        <li class="footer__socials__item">
-          <a class="footer__socials__link" href="https://facebook.com">Fb</a>
+  <footer class="page__footer footer mt-auto flex justify-between">
+    <nav class="footer__nav px-10 py-0 flex">
+      <ul class="footer__socials flex flex-col items-center gap-7">
+        <li class="footer__socials__item rotate-90op">
+          <a class="footer__socials__link" href="https://vk.com">Vk</a>
         </li>
-        <li class="footer__socials__item">
-          <a class="footer__socials__link" href="https://instagram.com">In</a>
-        </li>
-        <li class="footer__socials__item">
+        <li class="footer__socials__item rotate-90op">
           <a class="footer__socials__link" href="https://twitter.com">Tw</a>
         </li>
-        <li class="footer__socials__item">
-          <a class="footer__socials__link" href="https://vk.com">Vk</a>
+        <li class="footer__socials__item rotate-90op">
+          <a class="footer__socials__link" href="https://instagram.com">In</a>
+        </li>
+        <li class="footer__socials__item rotate-90op">
+          <a class="footer__socials__link" href="https://facebook.com">Fb</a>
         </li>
       </ul>
     </nav>
 
-    <div class="actions">
+    <div class="actions relative flex-2 flex justify-between py-7 px-12">
+      <div class="frosted absolute left-0 top-0 w-full h-full"></div>
 
-      <article class="events">
-        <h3 class="events__title">Events</h3>
-        <section class="events-items">
-          <p class="events-items__event">
-            <span>Back to school event</span>
-            / <a href="https://t.me/mayllwer">@mayllwer</a>
-            <time datetime="2022-06-19">SF - sat, June 19</time>
-            / <time datetime="2022-06-19T23:00">11 pm - 2 am</time>
+      <article class="events mr-24">
+        <h3 class="events__title uppercase mb-12">Events</h3>
+        <section class="events-items flex font-bold mb-7">
+          <p class="events-items__event mr-10 text-sm leading-loose">
+            <span class="text-white/[0.5]">Back to school event /</span>
+            <a href="https://t.me/mayllwer" class="text-white/[0.5]">@mayllwer</a>
+            <br>
+            <time datetime="2022-06-19" class="">SF - sat, June 19 /</time>
+            <time datetime="2022-06-19T23:00">11 pm - 2 am</time>
           </p>
-          <p class="events-items__event">
-            <span>Pop - up 13th event</span>
-            / <a href="https://t.me/mayllwer">@mayllwer</a>
-            <time datetime="2022-07-03">SF - mon, July 3</time>
-            / <time datetime="2022-07-03T18:00">6 pm - 6 am</time>
+
+          <p class="events-items__event text-sm leading-loose">
+            <span class="text-white/[0.5]">Pop - up 13th event /</span>
+            <a href="https://t.me/mayllwer" class="text-white/[0.5]">@mayllwer</a>
+            <br>
+            <time datetime="2022-07-03">SF - mon, July 3 /</time>
+            <time datetime="2022-07-03T18:00">6 pm - 6 am</time>
           </p>
         </section>
+        <ul class="dots flex gap-2.5">
+          <li class="dot cursor-pointer dot--active h-1.5 w-1.5 rounded-full"></li>
+          <li class="dot cursor-pointer h-1.5 w-1.5 rounded-full"></li>
+          <li class="dot cursor-pointer h-1.5 w-1.5 rounded-full"></li>
+        </ul>
       </article>
 
       <article class="news">
-        <h3 class="news__title">News</h3>
-        <p class="news__collection">A fresh take on our Active collection / now also available in
-          Red</p>
-        <p class="news__place">Now we have a new place at 28 mall</p>
-        <button class="news__read read-more">Read more</button>
+        <h3 class="news__title uppercase mb-12">News</h3>
+        <p class="news__collection text-white/[0.5] text-xs mb-6">
+          A fresh take on our Active collection /
+          now also available in <span class="text-red-700">Red</span>
+        </p>
+        <p class="news__place text-white/[0.5] text-xs mb-6">
+          Now we have a new place at 28 mall
+        </p>
+        <button class="news__read read-more text-red-700 text-sm">Read more</button>
       </article>
 
     </div>

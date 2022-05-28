@@ -33,9 +33,6 @@ body {
   padding-bottom: 20px;
 }
 
-main {
-}
-
 .slider-description__title {
   color: var(--main-title);
 }
@@ -44,6 +41,21 @@ main {
   color: rgba(255, 255, 255, 0.5);
 }
 
-footer {
+.actions {
   background-color: var(--bg-footer);
+}
+
+.frosted {
+  content: '';
+  background-color: rgba(0, 0, 0, .3);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.dot {
+  background-color: rgba(63, 63, 63, 1);
+}
+
+.dot--active {
+  background-color: var(--accent-color);
 }
