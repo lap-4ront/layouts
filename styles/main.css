@@ -42,7 +42,7 @@ p {
 main {
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
-  gap: 15px;
+  gap: 30px;
   place-content: center;
 }
 
@@ -56,6 +56,13 @@ main {
   overflow: hidden;
   position: relative;
   text-align: center;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.project:hover {
+  box-shadow:
+    1px 1px 7px 4px hsl(238deg 48% 26% / 0.2),
+    -1px -1px 7px 4px hsl(238deg 48% 26% / 0.2);
 }
 
 .project-description {
