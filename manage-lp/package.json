@@ -1,0 +1,16 @@
+{
+  "name": "manage-lp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/manage.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/manage.css --watch"
+  },
+  "keywords": ["html", "css", "tailwindcss"],
+  "author": "4rontender <4rontender@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}

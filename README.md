@@ -13,5 +13,6 @@
 * ### [portfolio-grid](portfolio-grid)
 * ### [stepik-lp](stepik-lp)
 * ### [work-anywhere](work-anywhere)
+* ### [manage-lp](manage-lp)
 
 [Back &#8679;](#content)
