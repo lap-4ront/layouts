@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { resolve } = require("path");
 const { defineConfig } = require("vite");
 
@@ -9,5 +10,6 @@ module.exports = defineConfig({
         cases: resolve(__dirname, "cases/battle/index.html")
       }
     }
-  }
+  },
+  base: "./"
 });

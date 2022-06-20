@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.10",
-    "@fontsource/montserrat": "^4.5.10"
+    "@fontsource/montserrat": "^4.5.10",
+    "dotenv": "^16.0.1"
   }
 }
